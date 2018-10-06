@@ -2,11 +2,14 @@
   "name": "elmwp",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server --hot",
-    "deploy": "node_modules/.bin/webpack -p --env.production"
+    "deploy": "node_modules/.bin/webpack -p --env.production",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css"
   },
   "devDependencies": {
+    "bulma": "^0.7.1",
     "elm-hot-webpack-loader": "^1.0.2",
     "elm-webpack-loader": "^5.0.0",
+    "node-sass": "^4.9.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
